@@ -36,6 +36,34 @@
           <button class="navbar-toggler" type="button">
             <span class="menu-lines"><span></span></span>
           </button>
+          <!-- <div class="header__top-right">
+            <ul class="list-unstyled d-flex justify-content-end align-items-center mb-0">
+              <li>
+                <div class="dropdown lang-dropdown">
+                  <button class="dropdown-toggle lang-dropdown-toggle" id="langDropdown" data-toggle="dropdown">
+                    <i class="icon-map"></i><span>English</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="langDropdown">
+                    <a class="dropdown-item" href="#">Spain</a>
+                    <a class="dropdown-item" href="#">France</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <ul class="navbar-actions list-unstyled mb-0 d-flex align-items-center">
+                  <li class="d-none d-xl-block">
+                    <a href="request-quote.html" class="btn action__btn-contact">Request A Quote</a>
+                  </li>
+                  <li>
+                    <button class="action__btn action__btn-login open-login-popup">
+                      <i class="icon-user"></i><span>Login</span>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div> -->
+          <!-- /.header-top-right -->
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
               <li class="nav__item">
@@ -68,16 +96,18 @@
                 <a href="contact-us.html" class="nav__item-link">Contact Us</a>
               </li><!-- /.nav-item -->
               <li class="nav__item nav__item___highlight d-none d-lg-flex">
-                <a href="" class="btn btn__primary btn__primary-style btn-custom">
+                <button href="" class="btn btn__primary btn__primary-style btn-custom" data-toggle="modal" data-target="#assessmentModal">
                   <span>Schedule an Assessment</span>
-                </a>
+                </button>
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
             <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
           </div><!-- /.navbar-collapse -->
-          <!-- <div class="d-flex align-items-center">
-            <a href="#" class="action__btn action__btn-search ml-30"><i class="icon-search"></i></a>
-          </div> -->
+          <div class="d-none d-lg-flex align-items-center social-media-div">
+            <a href="https://www.facebook.com/atlinkcom/?ref=br_rs" class="social-media-link" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/company/atlink-communications-inc/" target="_blank" class="social-media-link"><i class="fab fa-linkedin"></i></a>
+            <!-- <a href="https://www.youtube.com/channel/UCZTVUqOPfWGC-sxm_kysfoQ"><i class="fab fa-youtube" target="_blank"></i></a> -->
+          </div>
         </div><!-- /.container -->
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
@@ -134,9 +164,9 @@
             <div class="row align-items-center">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
                 <div class="slide__content">
-                  <span class="slide__subtitle">We work while you sleep</span>
-                  <h2 class="slide__title">Tired of playing noc and service desk catch-up each morning?</h2>
-                  <p class="slide__desc">We will address any NOC or service desk issues that are scheduled or crop up outside normal business hours.</p>
+                  <span class="slide__subtitle">White label partner for Managed Service Providers</span>
+                  <h2 class="slide__title">Our expert resource combined with your msp know-how</h2>
+                  <p class="slide__desc">We provides high-quality white label 24/7 Network Operations Centre (NOC) and Service Desk capabilities to MSPs and IT service providers, enabling them to extend the services they offer to their customers.</p>
                   <div class="d-flex flex-wrap align-items-center">
                     <a href="about-us.html" class="btn btn__primary btn__primary-style2 mr-30">
                       <span>Find Out More</span>
@@ -225,66 +255,136 @@
           </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
         <div class="row">
+          <!-- <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="service-item">
+              <div class="service__icon">
+                <img src="./assets/images/icons/tech.png" class="img-responsive" alt="Dedicated Tech">
+              </div>
+              <h4 class="service__title">Dedicated Tech <br>&nbsp;</h4>
+              <div class="service__content">
+                <p class="service__desc">As an MSP it is vital that you have the right team of highly skilled technical engineers...</p>
+                <a href="dedicated-tech.html" class="btn btn__primary">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="service-item">
+              <div class="service__icon">
+                <img src="./assets/images/icons/network.png" class="img-responsive" alt="NOC">
+              </div>
+              <h4 class="service__title">Network Operations <br>Centre (NOC)</h4>
+              <div class="service__content">
+                <p class="service__desc">As an MSP you know that even a minor disruption to your IT network can have a huge impact. </p>
+                <a href="partnering-for-noc.html" class="btn btn__primary">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="service-item">
+              <div class="service__icon">
+                <img src="./assets/images/icons/project.png" class="img-responsive" alt="Project Services">
+              </div>
+              <h4 class="service__title">Project Services <br>&nbsp;</h4>
+              <div class="service__content">
+                <p class="service__desc">As an MSP you know that new or unexpected IT projects can bring a bulk of work all at once...</p>
+                <a href="project_services.html" class="btn btn__primary">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="service-item">
+              <div class="service__icon">
+                <img src="./assets/images/icons/security.png" class="img-responsive" alt="SOC">
+              </div>
+              <h4 class="service__title">Security Operations <br>Center (SOC)</h4>
+              <div class="service__content">
+                <p class="service__desc">As an MSP you know that cyber security is no longer a consideration.</p>
+                <a href="security-operations-center-soc.html" class="btn btn__primary">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="service-item">
+              <div class="service__icon">
+                <img src="./assets/images/icons/service.png" class="img-responsive" alt="Service Desk">
+              </div>
+              <h4 class="service__title">Service Desk <br>Support</h4>
+              <div class="service__content">
+                <p class="service__desc">At AtLink we understand that your service desk is the heart of your organisation.
+                </p>
+                <a href="service-desk.html" class="btn btn__primary btn__primary-style2">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div> -->
           <div class="col-12">
             <div class="slick-carousel"
-              data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "arrows": false, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
-              <!-- service item #1 -->
+              data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "arrows": false, "dots": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
               <div class="service-item">
                 <div class="service__icon">
                   <img src="./assets/images/icons/tech.png" class="img-responsive" alt="Dedicated Tech">
-                </div><!-- /.service__icon -->
+                </div>
                 <h4 class="service__title">Dedicated Tech <br>&nbsp;</h4>
                 <div class="service__content">
                   <p class="service__desc">As an MSP it is vital that you have the right team of highly skilled technical engineers...</p>
                   <a href="dedicated-tech.html" class="btn btn__primary">
                     <span>Read More</span>
                   </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
-              <!-- service item #2 -->
+                </div>
+              </div>
+              
               <div class="service-item">
                 <div class="service__icon">
                   <img src="./assets/images/icons/network.png" class="img-responsive" alt="NOC">
-                </div><!-- /.service__icon -->
+                </div>
                 <h4 class="service__title">Network Operations <br>Centre (NOC)</h4>
                 <div class="service__content">
                   <p class="service__desc">As an MSP you know that even a minor disruption to your IT network can have a huge impact. </p>
                   <a href="partnering-for-noc.html" class="btn btn__primary">
                     <span>Read More</span>
                   </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
-              <!-- service item #3 -->
+                </div>
+              </div>
+              
               <div class="service-item">
                 <div class="service__icon">
                   <img src="./assets/images/icons/project.png" class="img-responsive" alt="Project Services">
-                </div><!-- /.service__icon -->
+                </div>
                 <h4 class="service__title">Project Services <br>&nbsp;</h4>
                 <div class="service__content">
                   <p class="service__desc">As an MSP you know that new or unexpected IT projects can bring a bulk of work all at once...</p>
                   <a href="project_services.html" class="btn btn__primary">
                     <span>Read More</span>
                   </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
-              <!-- service item #4 -->
+                </div>
+              </div>
+              
               <div class="service-item">
                 <div class="service__icon">
                   <img src="./assets/images/icons/security.png" class="img-responsive" alt="SOC">
-                </div><!-- /.service__icon -->
+                </div>
                 <h4 class="service__title">Security Operations <br>Center (SOC)</h4>
                 <div class="service__content">
                   <p class="service__desc">As an MSP you know that cyber security is no longer a consideration.</p>
                   <a href="security-operations-center-soc.html" class="btn btn__primary">
                     <span>Read More</span>
                   </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
-              <!-- service item #5 -->
+                </div>
+              </div>
+              
               <div class="service-item">
                 <div class="service__icon">
                   <img src="./assets/images/icons/service.png" class="img-responsive" alt="Service Desk">
-                </div><!-- /.service__icon -->
+                </div>
                 <h4 class="service__title">Service Desk <br>Support</h4>
                 <div class="service__content">
                   <p class="service__desc">At AtLink we understand that your service desk is the heart of your organisation.
@@ -292,10 +392,10 @@
                   <a href="service-desk.html" class="btn btn__primary btn__primary-style2">
                     <span>Read More</span>
                   </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
-            </div><!-- /.carousel -->
-          </div><!-- /.col-12 -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div><!-- /.row -->
         <div class="row">
           <div class="col-12 text-center">
@@ -328,70 +428,7 @@
               </a>
             </div>
           </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <!-- <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="feature-item">
-              <div class="feature__icon">
-                <i class="icon-statistic"></i>
-              </div>
-              <h4 class="feature__title">Software Asset Management</h4>
-              <p class="feature__desc">Extend proven Tech best practices to HR, finance, and other service delivery
-                areas.</p>
-              <a href="#" class="btn__link">
-                <i class="icon-arrow-right icon-outlined"></i>
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="feature-item">
-              <div class="feature__icon">
-                <i class="icon-software"></i>
-              </div>
-              <h4 class="feature__title">Software License Management</h4>
-              <p class="feature__desc">Build dynamic request templates with associated workflows, and tasks.</p>
-              <a href="#" class="btn__link">
-                <i class="icon-arrow-right icon-outlined"></i>
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="feature-item">
-              <div class="feature__icon">
-                <i class="icon-website"></i>
-              </div>
-              <h4 class="feature__title">Knowledge Base & Live Chat</h4>
-              <p class="feature__desc">Build dynamic request templates with associated workflows, and tasks.</p>
-              <a href="#" class="btn__link">
-                <i class="icon-arrow-right icon-outlined"></i>
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="feature-item">
-              <div class="feature__icon">
-                <i class="icon-management"></i>
-              </div>
-              <h4 class="feature__title">Privileged Access Management</h4>
-              <p class="feature__desc">Extend proven Tech best practices to HR, finance, and other service delivery
-                areas.</p>
-              <a href="#" class="btn__link">
-                <i class="icon-arrow-right icon-outlined"></i>
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="row">
-          <div class="col-12 text-center mt-40">
-            <p class="font-weight-bold color-white mb-0">Feel free to contact us, or you can call us any time
-              <a href="tel:(002) 01061245741" class="color-white-hover">(002) 01061245741</a>
-            </p>
-          </div>
-        </div> -->
+        </div>
       </div><!-- /.container -->
     </section><!-- /.Features Layout 2 -->
 
@@ -452,153 +489,6 @@
       </div><!-- /.container -->
     </section><!-- /.testimonials 1 -->
 
-    <!-- =========================== 
-      portfolio layout 2
-    ============================= -->
-    <!-- <section class="portfolio-layout2 portfolio-layout2-carousel pb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-            <div class="heading mb-50">
-              <h2 class="heading__subtitle color-body">Latest Case Studies</h2>
-              <h3 class="heading__title">Success Stories</h3>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="slick-carousel"
-              data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "arrows": false, "dots": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
-              <div class="portfolio-item">
-                <div class="portfolio__img">
-                  <a href="case-studies-single.html"><img src="assets/images/portfolio/modern/1.jpg"
-                      alt="portfolio img"></a>
-                </div>
-                <div class="portfolio__icon">
-                  <img src="assets/images/icons/1.png" alt="icon">
-                </div>
-                <div class="portfolio__content">
-                  <h4 class="portfolio__title"><a href="#">Financial’s Need For
-                      Strategic Advisor</a></h4>
-                  <p class="portfolio__desc">We delivered solutions at every step, and moved seamlessly into a more
-                    proactive role as a strategic advisor, providing support and guidance across all IT topics.</p>
-                  <a href="case-studies-single.html" class="btn btn__secondary btn__link">
-                    <span>Read More</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
-                </div>
-
-              </div>
-              <div class="portfolio-item">
-                <div class="portfolio__img">
-                  <a href="case-studies-single.html"><img src="assets/images/portfolio/modern/2.jpg"
-                      alt="portfolio img"></a>
-                </div>
-                <div class="portfolio__icon">
-                  <img src="assets/images/icons/2.png" alt="icon">
-                </div>
-                <div class="portfolio__content">
-                  <h4 class="portfolio__title"><a href="#">24x7 System Monitoring
-                      and Alert Response</a></h4>
-                  <p class="portfolio__desc">This single, unified platform integrates all operational phases of
-                    selling and activation of their wireless services and devices, and serves as the backbone .</p>
-                  <a href="case-studies-single.html" class="btn btn__secondary btn__link">
-                    <span>Read More</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <div class="portfolio__img">
-                  <a href="case-studies-single.html"><img src="assets/images/portfolio/modern/3.jpg"
-                      alt="portfolio img"></a>
-                </div>
-                <div class="portfolio__icon">
-                  <img src="assets/images/icons/3.png" alt="icon">
-                </div>
-                <div class="portfolio__content">
-                  <h4 class="portfolio__title"><a href="#">Nonprofit Organization
-                      Utilized Security</a></h4>
-                  <p class="portfolio__desc">Servers going down on a weekly basis had become the organization’s
-                    “normal.” We came on board with the objective of stabilizing the environment,</p>
-                  <a href="case-studies-single.html" class="btn btn__secondary btn__link">
-                    <span>Read More</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <div class="portfolio__img">
-                  <a href="case-studies-single.html"><img src="assets/images/portfolio/modern/4.jpg"
-                      alt="portfolio img"></a>
-                </div>
-                <div class="portfolio__icon">
-                  <img src="assets/images/icons/4.png" alt="icon">
-                </div>
-                <div class="portfolio__content">
-                  <h4 class="portfolio__title"><a href="#">Powerful IT Upgrade Aligns
-                      With Your Objectives</a></h4>
-                  <p class="portfolio__desc">They needed a robust management solution to organize archive critical
-                    documents for client cases, and wanted to determine solutions at every step.</p>
-                  <a href="case-studies-single.html" class="btn btn__secondary btn__link">
-                    <span>Read More</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <div class="portfolio__img">
-                  <a href="case-studies-single.html"><img src="assets/images/portfolio/modern/5.jpg"
-                      alt="portfolio img"></a>
-                </div>
-                <div class="portfolio__icon">
-                  <img src="assets/images/icons/5.png" alt="icon">
-                </div>
-                <div class="portfolio__content">
-                  <h4 class="portfolio__title"><a href="#">The Best IT Practices in
-                      Cloud and Security</a></h4>
-                  <p class="portfolio__desc">A standardized set of practices, we produce an extensive report
-                    recommendations, and health ratings for each technolog phases of selling .</p>
-                  <a href="case-studies-single.html" class="btn btn__secondary btn__link">
-                    <span>Read More</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <div class="portfolio__img">
-                  <a href="case-studies-single.html"><img src="assets/images/portfolio/modern/6.jpg"
-                      alt="portfolio img"></a>
-                </div>
-                <div class="portfolio__icon">
-                  <img src="assets/images/icons/6.png" alt="icon">
-                </div>
-                <div class="portfolio__content">
-                  <h4 class="portfolio__title"><a href="#">Helping Companies With
-                      Healthcare Inustry</a></h4>
-                  <p class="portfolio__desc">The client was not satisfied with the level of responsiveness and the
-                    lack of support provided by their previous service with the objective of stabilizing.</p>
-                  <a href="case-studies-single.html" class="btn btn__secondary btn__link">
-                    <span>Read More</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="text__link mb-0">Working hard to earn our customers’ trust.
-              <a href="industries.html" class="btn btn__secondary btn__link mx-1">
-                <span>Explore All Services</span> <i class="icon-arrow-right icon-outlined"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <!-- ======================
      Work Process 
     ========================= -->
@@ -619,164 +509,26 @@
             <h3 class="heading__title color-white">So many MSPs are choosing AtLink's Dedicated Tech solution</h3>
           </div><!-- /col-lg-5 -->
         </div><!-- /.row -->
-        <!-- <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7">
-            <div class="banners-wrapper sticky-top">
-              <div class="tab-content mb-50">
-                <div class="tab-pane fade show active" id="tab1">
-                  <div class="video__banner">
-                    <img src="assets/images/work-process/1.jpg" class="rounded" alt="banner">
-                    <a class="video__btn video__btn-white popup-video"
-                      href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                      <div class="video__player">
-                        <i class="fa fa-play"></i>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="tab2">
-                  <div class="video__banner">
-                    <img src="assets/images/work-process/2.jpg" class="rounded" alt="banner">
-                    <a class="video__btn video__btn-white popup-video"
-                      href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                      <div class="video__player">
-                        <i class="fa fa-play"></i>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="tab3">
-                  <div class="video__banner">
-                    <img src="assets/images/work-process/3.jpg" class="rounded" alt="banner">
-                    <a class="video__btn video__btn-white popup-video"
-                      href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                      <div class="video__player">
-                        <i class="fa fa-play"></i>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="tab4">
-                  <div class="video__banner">
-                    <img src="assets/images/work-process/4.jpg" class="rounded" alt="banner">
-                    <a class="video__btn video__btn-white popup-video"
-                      href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                      <div class="video__player">
-                        <i class="fa fa-play"></i>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="cta-banner mt-30 mb-30 d-flex flex-wrap align-items-center">
-                <h4 class="cta__title my-3 pr-30">
-                  We partner with brands to help them improve their Software and IT services. Ready to start your next
-                  project? Drop us a line or two at: <a href="mailto:info@atlinkcom.com ">info@atlinkcom.com </a>
-                </h4>
-                <a href="#" class="btn btn__primary btn__primary-style2">
-                  <span>Request Demo</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5">
-            <div class="heading mb-70">
-              <h2 class="heading__subtitle color-primary">How We Works!!</h2>
-              <h3 class="heading__title color-white">Deliver Only Exceptional Quality, And Improve! </h3>
-            </div>
-            <nav class="nav nav-tabs">
-              <a class="process-item active" data-toggle="tab" href="#tab1">
-                <div class="process-item__content">
-                  <h4 class="process-item__title">Brainstorming</h4>
-                  <p class="process-item__desc">The first step is to take the projects data & think about it to manage
-                    all aspects of your software assets including maintenance.</p>
-                </div>
-              </a>
-              <a class="process-item" data-toggle="tab" href="#tab2">
-                <div class="process-item__content">
-                  <h4 class="process-item__title">Concept Prototype</h4>
-                  <p class="process-item__desc">To know about the product, customers & competitors offer integral
-                    communication services software assets.
-                  </p>
-                </div>
-              </a>
-              <a class="process-item" data-toggle="tab" href="#tab3">
-                <div class="process-item__content">
-                  <h4 class="process-item__title">Design Layout</h4>
-                  <p class="process-item__desc">Start to work on the design taking with collected data, we're
-                    responsible for our process and results.
-                  </p>
-                </div>
-              </a>
-              <a class="process-item" data-toggle="tab" href="#tab4">
-                <div class="process-item__content">
-                  <h4 class="process-item__title">Evaluation</h4>
-                  <p class="process-item__desc">Reach a conclusion from the investigations about product and we thank
-                    each of our great clients projects.</p>
-                </div>
-              </a>
-            </nav>
-          </div>
-        </div> -->
       </div><!-- /.container -->
     </section><!-- /.Work Process -->
 
     <!-- ======================
       Blog Grid
     ========================= -->
-    <section class="blog-grid pb-50">
+    <section class="blog-grid pt-60 pb-60">
+      <div class="bg-img"><img src="assets/images/backgrounds/5.png" alt="backgrounds"></div>
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="heading text-center mb-40">
+            <div class="heading text-center mb-20">
               <h2 class="heading__subtitle">Contact Us</h2>
               <h3 class="heading__title">We want to hear from you</h3>
-            </div><!-- /.heading -->
-            <div class="contact-panel">
-              <form class="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <p class="contact-panel__desc mb-20">Fill in your details and a member of the our team will be in touch.</p>
-                  </div>
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
-                        required>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email" id="contact-email"
-                        name="contact-email" required>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <select class="form-control">
-                        <option value="1">Inquiry</option>
-                        <option value="2">case study</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Phone" id="contact-Phone"
-                        name="contact-phone" required>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-12">
-                    <div class="form-group">
-                      <textarea class="form-control" placeholder="Describe your inquirey!" id="contact-message"
-                        name="contact-message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn__secondary btn__icon btn__xhight mt-10">
-                      <span>Submit Request</span>
-                    </button>
-                    <div class="contact-result"></div>
-                  </div><!-- /.col-lg-12 -->
-                </div><!-- /.row -->
-              </form><!-- /.contact-panel__form -->
+            </div>
+            <div class="text-center">
+              <p class="mb-30">Get in touch with us today and find out how we can help improve your business</p>
+              <button href="" class="btn btn__primary btn__primary-style" data-toggle="modal" data-target="#assessmentModal">
+                <span>Schedule an Assessment</span>
+              </button>
             </div>
           </div>
         </div><!-- /.row -->
@@ -788,26 +540,6 @@
       ========================== -->
     <footer class="footer bg-secondary">
       <div class="container">
-        <!-- <div class="footer-top pt-50 pb-30">
-          <div class="row">
-            <div class="col-sm-4 col-md-2 col-lg-4">
-              <img src="assets/images/logo/logo-light-small.png" alt="logo" class="mb-30">
-            </div>
-            <div class="col-sm-8 col-md-4 col-lg-3">
-              <h6 class="footer-top__title">Sign up for latest IT resources,
-                news and insights from AtLink Communications Inc!</h6>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-5">
-              <form class="footer-form d-flex mb-0">
-                <input type="text" class="form-control mr-20" placeholder="Your Email Address">
-                <button type="submit" class="btn btn__primary btn__primary-style2">
-                  <span>Subscribe</span>
-                  <i class="icon-arrow-right"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div> -->
         <div class="footer-primary">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-4 footer-widget footer-widget-about footer-start">
@@ -828,11 +560,11 @@
                   </ul>
                 </div><!-- /.contact-info -->
                 <ul class="social-icons list-unstyled mb-0">
-                  <li><a href="https://www.facebook.com/atlinkcom/?ref=br_rs"><i class="fab fa-facebook-f" target="_blank"></i></a></li>
+                  <li><a href="https://www.facebook.com/atlinkcom/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                   <li><a href="https://www.linkedin.com/company/atlink-communications-inc/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                  <li><a href="https://www.instagram.com/atlinkcommunications/"><i class="fab fa-instagram" target="_blank"></i></a></li>
-                  <li><a href="https://twitter.com/AtlinkComm"><i class="fab fa-twitter" target="_blank"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCZTVUqOPfWGC-sxm_kysfoQ"><i class="fab fa-youtube" target="_blank"></i></a></li>
+                  <li><a href="https://www.instagram.com/atlinkcommunications/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://twitter.com/AtlinkComm" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCZTVUqOPfWGC-sxm_kysfoQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
                 </ul><!-- /.social-icons -->
               </div><!-- /.footer-widget__content -->
             </div><!-- /.col-xl-2 -->
@@ -964,6 +696,71 @@
       </form>
     </div><!-- /. search-popup -->
   </div><!-- /.wrapper -->
+
+  <!-- Modal -->
+<div class="modal fade" id="assessmentModal" tabindex="-1" role="dialog" aria-labelledby="assessmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="assessmentModalLabel">Schedule an Assessment</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Get in touch with us today and find out how we can help improve your business</p>
+        <br>
+        <!-- <div class="contact-panel"></div> -->
+        <form class="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                  required>
+              </div>
+            </div><!-- /.col-lg-6 -->
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" id="contact-email"
+                  name="contact-email" required>
+              </div>
+            </div><!-- /.col-lg-6 -->
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="1">Inquiry</option>
+                  <option value="2">case study</option>
+                </select>
+              </div>
+            </div><!-- /.col-lg-6 -->
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Phone" id="contact-Phone"
+                  name="contact-phone" required>
+              </div>
+            </div><!-- /.col-lg-6 -->
+            <div class="col-12">
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Describe your inquirey!" id="contact-message"
+                  name="contact-message"></textarea>
+              </div>
+              <button type="submit" class="btn btn__secondary btn__icon btn__xhight mt-10">
+                <span>Submit Request</span>
+              </button>
+              <div class="contact-result"></div>
+              <br>
+            </div><!-- /.col-lg-12 -->
+          </div><!-- /.row -->
+        </form><!-- /.contact-panel__form -->
+      </div>
+      <div class="modal-footer justify-content-center">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+        <p>or you may connect sales & support at <a href="tel:2816456907">(281) 645-6907</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script src="assets/js/jquery-3.5.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>

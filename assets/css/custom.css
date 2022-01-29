@@ -1,8 +1,26 @@
+#assessmentModal {
+}
+
+.modal-content {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+}
+
+.modal-header .close {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #868686;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
 .btn {
   height: 50px;
   line-height: 50px;
   font-weight: 600;
   min-width: 160px;
+  /* border-radius: 50px; */
 }
 
 .navbar .nav__item .btn-custom {
@@ -32,6 +50,10 @@
   color: #ffffff;
 }
 
+.services-layout1 .slick-dots {
+  margin-top: 40px;
+}
+
 .service-item .btn:hover:after {
   width: 100%;
   background-color: #091d3e;
@@ -49,7 +71,34 @@
   font-weight: 500;
 }
 
+@media (max-width: 767px) {
+}
+
 @media screen and (min-width: 992px) {
+  .modal-dialog {
+    max-width: 900px;
+  }
+  .social-media-div {
+    margin-left: 25px;
+  }
+  .social-media-div .social-media-link {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #2f405c;
+  }
+
+  .social-media-div .social-media-link:first-child {
+    margin-left: 0;
+  }
+
+  .social-media-div .social-media-link:last-child {
+    margin-right: 0;
+  }
+
+  .social-media-div .social-media-link:hover {
+    color: #0098d1;
+  }
+
   .service-item .service__desc {
     min-height: 72px;
   }
@@ -70,10 +119,14 @@
     max-height: 10vh;
   }
 
+  .social-media-div {
+    margin-left: 45px;
+  }
+
   .navbar .container,
   .navbar .navbar-brand {
     height: auto;
-    line-height: auto;
+    line-height: inherit;
   }
 
   .header-transparent + .slider .slide-item {
