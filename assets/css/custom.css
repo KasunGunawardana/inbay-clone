@@ -71,6 +71,26 @@
   font-weight: 500;
 }
 
+.page-title {
+  position: relative;
+}
+
+.page-title .breadcrumb {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+}
+
+.timeline-item .timeline__year {
+  font-size: 18px;
+  font-weight: 600;
+  -ms-flex: 0 0 150px;
+  flex: 0 0 150px;
+  max-width: 150px;
+  text-align: left;
+}
+
 @media (max-width: 767px) {
 }
 

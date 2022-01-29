@@ -1119,6 +1119,11 @@ section p {
   margin-bottom: 20px;
 }
 
+.heading__title2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
 .heading__title .underlined-text {
   border-bottom: 4px solid #0098d1;
 }
@@ -1132,8 +1137,16 @@ section p {
   font-size: 40px;
 }
 
+.heading-layout2 .heading__title2 {
+  font-size: 35px;
+}
+
 .heading-layout3 .heading__title {
   font-size: 50px;
+}
+
+.heading-layout3 .heading__title2 {
+  font-size: 40px;
 }
 
 .heading-light .heading__subtitle {
@@ -1187,12 +1200,19 @@ section p {
   .heading__title {
     font-size: 30px;
   }
+  .heading__title2 {
+    font-size: 26px;
+  }
 }
 
 /* Mobile Phones and tablets */
 @media (min-width: 320px) and (max-width: 767px) {
   .heading__title {
     font-size: 21px;
+    margin-bottom: 10px;
+  }
+  .heading__title2 {
+    font-size: 18px;
     margin-bottom: 10px;
   }
   .heading__subtitle,
@@ -1205,8 +1225,14 @@ section p {
   .heading-layout2 .heading__title {
     font-size: 24px;
   }
+  .heading-layout2 .heading__title2 {
+    font-size: 20px;
+  }
   .heading-layout3 .heading__title {
     font-size: 26px;
+  }
+  .heading-layout3 .heading__title2 {
+    font-size: 22px;
   }
   .text-block__desc {
     font-size: 14px;
@@ -1219,7 +1245,7 @@ section p {
     page title 
 -------------------------*/
 .header-transparent + .page-title {
-  margin-top: -135px;
+  /* margin-top: -135px; */
 }
 
 .pagetitle__subheading {
@@ -1249,8 +1275,8 @@ section p {
 }
 
 .page-title {
-  padding-top: 260px;
-  padding-bottom: 140px;
+  /* padding-top: 260px;
+  padding-bottom: 140px; */
 }
 
 .page-title .breadcrumb-item + .breadcrumb-item::before {
@@ -2827,11 +2853,13 @@ input[type="radio"] {
   transition: all 0.3s linear;
 }
 
-.navbar .dropdown-menu .nav__item .nav__item-link:hover {
+.navbar .dropdown-menu .nav__item .nav__item-link:hover,
+.navbar .dropdown-menu .nav__item .nav__item-link.active {
   color: #0098d1;
 }
 
-.navbar .dropdown-menu .nav__item .nav__item-link:hover:after {
+.navbar .dropdown-menu .nav__item .nav__item-link:hover:after,
+.navbar .dropdown-menu .nav__item .nav__item-link.active:after {
   opacity: 1;
   left: -15px;
 }
@@ -4411,6 +4439,14 @@ input[type="radio"] {
   margin-bottom: 25px;
 }
 
+.page-title .slide__desc {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
 .slider .slick-dots {
   position: absolute;
   bottom: 30px;
@@ -4546,7 +4582,8 @@ input[type="radio"] {
     padding: 100px 10px;
     height: auto !important;
   }
-  .slider .slide__desc {
+  .slider .slide__desc,
+  .page-title .slide__desc {
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -7502,7 +7539,7 @@ input[type="radio"] {
 }
 
 .awards .fancybox-item .fancybox__title {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .awards .fancybox-item .fancybox__desc {
