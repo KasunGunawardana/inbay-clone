@@ -3973,7 +3973,7 @@ input[type="radio"] {
 
 .footer .footer-primary {
   padding-top: 85px;
-  padding-bottom: 65px;
+  padding-bottom: 50px;
   border-top: 2px solid #053362;
 }
 
@@ -4389,14 +4389,14 @@ input[type="radio"] {
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: #f9f9f9;
   margin-bottom: 8px;
 }
 
 .slider .slide__title {
   font-size: 44px;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.1;
   color: #ffffff;
   margin-bottom: 25px;
@@ -4405,10 +4405,10 @@ input[type="radio"] {
 .slider .slide__desc {
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
   max-width: 550px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .slider .slick-dots {

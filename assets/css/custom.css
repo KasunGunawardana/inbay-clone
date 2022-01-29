@@ -1,3 +1,25 @@
+.btn {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  min-width: 160px;
+}
+
+.navbar .nav__item .btn-custom {
+  height: 40px;
+  line-height: 40px;
+  min-width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.is-sticky .nav__item___highlight {
+  align-items: center;
+}
+
 .service-item .btn:after {
   width: 100%;
   height: 100%;
@@ -39,5 +61,41 @@
   }
   footer .footer-end .content-wrapper,
   footer .footer-middle .content-wrapper {
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .header-full .navbar {
+    height: 10vh;
+    max-height: 10vh;
+  }
+
+  .navbar .container,
+  .navbar .navbar-brand {
+    height: auto;
+    line-height: auto;
+  }
+
+  .header-transparent + .slider .slide-item {
+    padding-top: inherit;
+    padding-bottom: inherit;
+    min-height: 55vh;
+    height: 55vh;
+  }
+
+  .header-transparent.header-full + .slider .slide-item {
+    padding-top: inherit;
+    padding-bottom: inherit;
+  }
+
+  .slider .slick-dots {
+    bottom: 50%;
+    transform: rotate(90deg) translateX(50%);
+    right: 0;
+    width: auto;
+  }
+
+  section.about-layout2 {
+    /* height: 37vh; */
   }
 }
