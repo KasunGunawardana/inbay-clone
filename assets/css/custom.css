@@ -83,12 +83,24 @@
 }
 
 .timeline-item .timeline__year {
-  font-size: 18px;
-  font-weight: 600;
   -ms-flex: 0 0 150px;
   flex: 0 0 150px;
   max-width: 150px;
   text-align: left;
+  color: #848e9f;
+}
+
+.timeline-item .timeline__desc {
+  text-align: left;
+}
+
+.feature-item.no-hover::before {
+  content: none;
+}
+
+.features-layout1 .feature-item.no-hover:hover .feature__title,
+.features-layout2 .feature-item.no-hover:hover .feature__title {
+  color: #fff;
 }
 
 @media (max-width: 767px) {
