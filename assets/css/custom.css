@@ -107,6 +107,10 @@
   background-color: transparent;
 }
 
+.footer .footer-form .form-control {
+  height: 55px;
+}
+
 @media (max-width: 767px) {
 }
 
@@ -168,8 +172,8 @@
   .header-transparent + .slider .slide-item {
     padding-top: inherit;
     padding-bottom: inherit;
-    min-height: 55vh;
-    height: 55vh;
+    min-height: 60vh;
+    height: 60vh;
   }
 
   .header-transparent.header-full + .slider .slide-item {
