@@ -83,9 +83,9 @@
 }
 
 .timeline-item .timeline__year {
-  -ms-flex: 0 0 150px;
-  flex: 0 0 150px;
-  max-width: 150px;
+  -ms-flex: 0 0 170px;
+  flex: 0 0 170px;
+  max-width: 170px;
   text-align: left;
   color: #848e9f;
 }
