@@ -6574,10 +6574,11 @@ input[type="radio"] {
   padding: 55px 60px 60px;
   border-radius: 3px;
   overflow: hidden;
-  -webkit-box-flex: 0;
+  /* -webkit-box-flex: 0;
   -ms-flex: 0 0 38%;
   flex: 0 0 38%;
-  max-width: 38%;
+  max-width: 38%; */
+  margin-bottom: 30px;
 }
 
 [class*="contact-layout"] .contact-panel__info .contact-block__title {
